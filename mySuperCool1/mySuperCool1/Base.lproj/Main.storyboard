@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mySuperCool1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="nvL-Th-gb8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdI-XY-wSN">
+                                <rect key="frame" x="255" y="285" width="90" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Click To Cool"/>
+                                <connections>
+                                    <action selector="ClickAway:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MCz-Vd-wUs"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuperCool" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-ga-y8C">
+                                <rect key="frame" x="180" y="65" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="75e-td-6XB"/>
+                                    <constraint firstAttribute="width" constant="240" id="awH-6B-3Ke"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nvL-Th-gb8" secondAttribute="bottom" id="4rm-o3-TdZ"/>
+                            <constraint firstItem="VDZ-ga-y8C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="92L-Mz-25W"/>
+                            <constraint firstItem="nvL-Th-gb8" firstAttribute="centerX" secondItem="VDZ-ga-y8C" secondAttribute="centerX" id="R0s-7d-g3X"/>
+                            <constraint firstItem="TdI-XY-wSN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T0e-9G-YO5"/>
+                            <constraint firstItem="TdI-XY-wSN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T54-bR-niP"/>
+                            <constraint firstItem="VDZ-ga-y8C" firstAttribute="centerX" secondItem="TdI-XY-wSN" secondAttribute="centerX" id="Vme-jq-xDg"/>
+                            <constraint firstItem="TdI-XY-wSN" firstAttribute="top" secondItem="VDZ-ga-y8C" secondAttribute="bottom" constant="92" id="gpa-RN-DC1"/>
+                            <constraint firstItem="nvL-Th-gb8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j0K-ma-bfR"/>
+                            <constraint firstItem="nvL-Th-gb8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="lVY-ZA-s7v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ClickAway" destination="TdI-XY-wSN" id="h3A-OO-9lR"/>
+                        <outlet property="SuperCool" destination="VDZ-ga-y8C" id="64K-uY-NWL"/>
+                        <outlet property="background" destination="nvL-Th-gb8" id="UQi-Yu-jtC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SuperCool" width="702" height="116"/>
+        <image name="bg" width="1667" height="1667"/>
+    </resources>
+</document>
