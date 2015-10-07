@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exercise1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJD-n7-9ao">
+                                <rect key="frame" x="277" y="434" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hide Flower">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.81960784310000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideFlower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qmB-HF-yhd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cT-vn-h0C">
+                                <rect key="frame" x="277" y="367" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hide People">
+                                    <color key="titleColor" red="0.66274509800000003" green="0.047058823530000002" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hidePeople:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EAz-Wb-Gld"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunshinePeople" translatesAutoresizingMaskIntoConstraints="NO" id="yxf-O0-ngK">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="45" y="59" width="311" height="179"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunflower" translatesAutoresizingMaskIntoConstraints="NO" id="BTK-vO-wCE">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="58" y="271" width="284" height="183"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1cT-vn-h0C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="257" id="EQW-LS-ZfL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1cT-vn-h0C" secondAttribute="trailing" constant="257" id="Jy3-Du-yot"/>
+                            <constraint firstItem="jJD-n7-9ao" firstAttribute="top" secondItem="1cT-vn-h0C" secondAttribute="bottom" constant="37" id="LGT-q0-bV1"/>
+                            <constraint firstItem="jJD-n7-9ao" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LnR-Nq-WzV"/>
+                            <constraint firstItem="1cT-vn-h0C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="347" id="S9H-SM-icf"/>
+                            <constraint firstItem="jJD-n7-9ao" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VhP-xn-rXO"/>
+                            <constraint firstItem="jJD-n7-9ao" firstAttribute="baseline" secondItem="1cT-vn-h0C" secondAttribute="baseline" id="Zng-Rk-Zeb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jJD-n7-9ao" secondAttribute="bottom" constant="136" id="eoo-b5-Iua"/>
+                            <constraint firstItem="1cT-vn-h0C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lUB-ux-udx"/>
+                            <constraint firstAttribute="bottom" secondItem="1cT-vn-h0C" secondAttribute="bottom" constant="20" symbolic="YES" id="rbf-gt-q22"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="yxf-O0-ngK"/>
+                                <exclude reference="BTK-vO-wCE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="lUB-ux-udx"/>
+                                <exclude reference="rbf-gt-q22"/>
+                                <exclude reference="LnR-Nq-WzV"/>
+                                <exclude reference="Zng-Rk-Zeb"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="yxf-O0-ngK"/>
+                                <include reference="BTK-vO-wCE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="EQW-LS-ZfL"/>
+                                <exclude reference="Jy3-Du-yot"/>
+                                <exclude reference="S9H-SM-icf"/>
+                                <include reference="lUB-ux-udx"/>
+                                <include reference="rbf-gt-q22"/>
+                                <exclude reference="eoo-b5-Iua"/>
+                                <exclude reference="LGT-q0-bV1"/>
+                                <include reference="LnR-Nq-WzV"/>
+                                <exclude reference="VhP-xn-rXO"/>
+                                <include reference="Zng-Rk-Zeb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="flower" destination="BTK-vO-wCE" id="4HL-LJ-o1S"/>
+                        <outlet property="people" destination="yxf-O0-ngK" id="24w-09-mMK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="265"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sunflower" width="600" height="424"/>
+        <image name="sunshinePeople" width="439" height="600"/>
+    </resources>
+</document>
